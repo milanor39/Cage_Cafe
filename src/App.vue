@@ -60,7 +60,7 @@
           </ul>
         </div>
       </div>
-      <p class="copy"><small>&copy; 2022 CageCafe</small></p>
+      <p class="copy"><small>copyright&copy; 2022 CageCafe, All Rights Reserved.</small></p>
     </div>
   </footer>
 </template>
@@ -75,7 +75,7 @@ body{
   margin: 0;
 }
 .container{
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 /*header*/
@@ -86,6 +86,7 @@ header{
   top: 0;
   background-color: white;
   padding-top: 10px;
+  z-index: 2;
   .header-content{
     display: flex;
     justify-content: space-between;
@@ -137,7 +138,7 @@ footer{
           a{
             color: var(--main-white);
             text-decoration: none;
-            margin-right: 20px;
+            margin-left: 20px;
           }
         }
       }
