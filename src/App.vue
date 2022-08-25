@@ -10,28 +10,35 @@
         <nav>
           <ul class="nav-link">
             <li>
-              <router-link to="/">首頁</router-link>
+              <router-link to="/about">
+                <span>最新消息</span>
+                <small>NEWS</small>
+              </router-link>
             </li>
             <li>
-              <router-link to="/about">最新消息</router-link>
+              <router-link to="/about">
+                <span>關於我們</span>
+                <small>ABOUT US</small>
+              </router-link>
             </li>
             <li>
-              <router-link to="/about">關於我們</router-link>
+              <router-link to="/about">
+                <span>美味餐點</span>
+                <small>MENU</small>
+              </router-link>
             </li>
             <li>
-              <router-link to="/about">美味餐點</router-link>
-            </li>
-            <li>
-              <router-link to="/about">門市資訊</router-link>
+              <router-link to="/about">
+                <span>門市資訊</span>
+                <small>SHOP</small>
+              </router-link>
             </li>
           </ul>
         </nav>
       </div>
   </header>
   <main>
-    <div class="container">
-      <router-view/>
-    </div>
+    <router-view/>
   </main>
   <footer>
     <div class="container">
@@ -60,7 +67,7 @@
           </ul>
         </div>
       </div>
-      <p class="copy"><small>copyright&copy; 2022 CageCafe, All Rights Reserved.</small></p>
+      <p class="copy"><small>&copy; 2022 CageCafe</small></p>
     </div>
   </footer>
 </template>
@@ -164,7 +171,7 @@ footer{
     }
   }
   .copy{
-    margin-bottom: 0;
+    margin: 0;
     text-align: center;
     color: var(--main-white);
   }

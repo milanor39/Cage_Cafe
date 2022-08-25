@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    <swiper
+  <swiper
       :spaceBetween="30"
       :centeredSlides="true"
       :autoplay="{
@@ -15,22 +14,21 @@
       class="mySwiper"
     >
       <swiper-slide>
-        <img src="https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A8068.jpg.webp?d=1420" alt="">
+        <img :src= "eventImg1" alt="">
       </swiper-slide>
       <swiper-slide>
-        <img src="https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A7885.jpg.webp?d=1420" alt="">
+        <img :src="eventImg2" alt="">
       </swiper-slide>
       <swiper-slide>
-        <img src="https://pakutaso.cdn.rabify.me/shared/img/thumb/E146_iceteatoraimunojinjya.jpg.webp?d=1420" alt="">
+        <img :src="eventImg3" alt="">
       </swiper-slide>
       <swiper-slide>
-        <img src="https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A8104.jpg.webp?d=1420" alt="">
+        <img :src="eventImg4" alt="">
       </swiper-slide>
       <swiper-slide>
-        <img src="https://pakutaso.cdn.rabify.me/shared/img/thumb/ellycollection051.jpg.webp?d=1420" alt="">
+        <img :src="eventImg5" alt="">
       </swiper-slide>
-    </swiper>
-  </div>
+  </swiper>
 </template>
 
 <script>
@@ -40,32 +38,37 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 // Import Swiper styles
 import 'swiper/css'
 
-import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper'
+import { Autoplay, Pagination } from 'swiper'
 
 export default {
+  data () {
+    return {
+      eventImg1: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A8068.jpg.webp?d=1420',
+      eventImg2: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A7885.jpg.webp?d=1420',
+      eventImg3: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/E146_iceteatoraimunojinjya.jpg.webp?d=1420',
+      eventImg4: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A8104.jpg.webp?d=1420',
+      eventImg5: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ellycollection051.jpg.webp?d=1420'
+    }
+  },
   components: {
     Swiper,
     SwiperSlide
   },
   setup () {
     return {
-      modules: [Autoplay, Pagination, Navigation]
+      modules: [Autoplay, Pagination]
     }
   }
 }
 </script>
 
 <style lang="scss">
-  .container{
-    max-width: 1200px;
-  }
   .swiper {
   width: 100%;
-  height: 100%;
+  max-height: 480px;
 }
 
 .swiper-slide {
