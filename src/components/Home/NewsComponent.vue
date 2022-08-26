@@ -29,7 +29,7 @@ export default {
         },
         {
           title: '2023中秋禮盒預購中',
-          img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/OG458A8165.jpg.webp?d=1420',
+          img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ellysakuramc14.jpg.webp?d=1420',
           date: '2023/8/30'
         },
         {
@@ -75,7 +75,7 @@ export default {
       }
       li:hover{
         box-shadow: 0 0 5px 5px var(--main-brown);
-        opacity: 0.8;
+        opacity: 0.7;
       }
     }
     .seemore{

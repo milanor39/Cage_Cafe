@@ -10,10 +10,15 @@
     </div>
   </section>
   <section>
-      <div class="container">
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
-      </div>
-    </section>
+    <div class="container">
+      <MenuComponent></MenuComponent>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <HelloWorld msg="Welcome to Your Vue.js App"/>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -21,13 +26,15 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import SwiperComponent from '@/components/Home/SwiperComponent.vue'
 import NewsComponent from '@/components/Home/NewsComponent.vue'
+import MenuComponent from '@/components/Home/MenuComponent.vue'
 
 export default {
   name: 'HomeView',
   components: {
     HelloWorld,
     SwiperComponent,
-    NewsComponent
+    NewsComponent,
+    MenuComponent
   }
 }
 </script>
