@@ -17,12 +17,6 @@
             </li>
             <li>
               <router-link to="/about">
-                <span>關於我們</span>
-                <small>ABOUT US</small>
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/about">
                 <span>美味餐點</span>
                 <small>MENU</small>
               </router-link>
@@ -77,6 +71,7 @@
   --main-brown: #734338;
   --main-white: #FCFAF2;
   --main-black: #554236;
+  --section-brown: #B9887D;
 }
 body{
   margin: 0;
@@ -116,7 +111,7 @@ header{
       margin: 0;
       a{
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: bold;
         padding: 10px 25px;
         color: var(--main-black);

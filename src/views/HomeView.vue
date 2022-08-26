@@ -33,15 +33,15 @@ export default {
 </script>
 
 <style lang="scss">
-  :root{
-    --section-bg: #B9887D;
-  }
   .container{
     max-width: 1200px;
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  section{
+    padding: 20px 0 20px 0;
+  }
   .section-news{
-    background-color: var(--section-bg);
+    background-color: var(--section-brown);
   }
 </style>
