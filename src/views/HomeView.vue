@@ -14,7 +14,7 @@
       <MenuComponent></MenuComponent>
     </div>
   </section>
-  <section>
+  <section class="hellovue">
     <div class="container">
       <HelloWorld msg="Welcome to Your Vue.js App"/>
     </div>
@@ -48,7 +48,7 @@ export default {
   section{
     padding: 20px 0 20px 0;
   }
-  .section-news{
+  .section-news,.hellovue{
     background-color: var(--section-brown);
   }
 </style>

@@ -86,7 +86,7 @@ export default {
       transition-duration: 0.3s;
     }
     .seemore:hover{
-      color: var(--main-white);
+      color: black;
     }
   }
 </style>
