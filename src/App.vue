@@ -24,7 +24,7 @@
             <li>
               <router-link to="/about">
                 <span>門市資訊</span>
-                <small>SHOP</small>
+                <small>Store information</small>
               </router-link>
             </li>
           </ul>
@@ -47,7 +47,7 @@
         <div class="footer-list">
           <ul>
             <li>
-              <router-link to="/about">企業社會責任</router-link>
+              <router-link to="/about">關於CageCafe</router-link>
             </li>
             <li>
               <router-link to="/about">網站地圖</router-link>
