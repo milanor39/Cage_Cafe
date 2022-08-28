@@ -68,8 +68,10 @@ export default {
       position: relative;
       overflow: hidden;
       transition-duration: 0.3s;
+      display: flex;
       img{
         max-width: 100%;
+        vertical-align: middle;
       }
       span{
         position: absolute;

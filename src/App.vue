@@ -11,20 +11,26 @@
           <ul class="nav-link">
             <li>
               <router-link to="/about">
-                <span>最新消息</span>
-                <small>NEWS</small>
+                <h3>最新消息</h3>
+                <span>NEWS</span>
               </router-link>
             </li>
             <li>
               <router-link to="/about">
-                <span>美味餐點</span>
-                <small>MENU</small>
+                <h3>關於CageCafe</h3>
+                <span>ABOUT</span>
               </router-link>
             </li>
             <li>
               <router-link to="/about">
-                <span>門市資訊</span>
-                <small>Store information</small>
+                <h3>美味餐點</h3>
+                <span>MENU</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/about">
+                <h3>門市資訊</h3>
+                <span>STORE INFORMATION</span>
               </router-link>
             </li>
           </ul>
@@ -71,7 +77,7 @@
   --main-brown: #734338;
   --main-white: #FCFAF2;
   --main-black: #554236;
-  --section-brown: #B9887D;
+  --section-brown: #D7C4BB;
 }
 body{
   margin: 0;
@@ -103,20 +109,27 @@ header{
   }
   nav{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     .nav-link{
       display: flex;
       list-style: none;
       padding-left: 0;
       margin: 0;
-      a{
-        text-decoration: none;
-        font-size: 1.3rem;
-        font-weight: bold;
-        padding: 10px 25px;
-        color: var(--main-black);
+      li{
+        margin-left: 10px;
+        text-align: center;
+        a{
+          display: inline-block;
+          padding: 10px 20px;
+          text-decoration: none;
+          color: var(--main-black);
+          transition: 0.3s ease-out;
+          h3{
+            margin: 0;
+          }
+        }
       }
-      a:hover{
+      li:hover a{
         background-color: var(--main-brown);
         color: var(--main-white);
       }
