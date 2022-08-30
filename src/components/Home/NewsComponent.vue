@@ -46,53 +46,65 @@ export default {
 </script>
 
 <style lang="scss">
-  .news-title{
-    text-align: center;
-    h2{
-      margin: 0;
-    }
+.news-title{
+  text-align: center;
+  h2{
+    margin: 0;
   }
-  .newslist{
-      display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
-      padding: 0 10px;
-      list-style: none;
-      li{
-        background-color: var(--main-white);
-        transition-duration: 0.3s;
-        text-align: center;
-        a{
-          display: block;
-          text-decoration: none;
-          padding-bottom: 18px;
-          img{
-            max-width: 100%;
-          }
-          h3{
-            margin-bottom: 0;
-            font-size: 1.5em;
-          }
-        }
-      }
-      li:hover{
-        box-shadow: 0 0 5px 5px var(--main-brown);
-        opacity: 0.7;
-      }
-    }
-    .news-seemore{
+}
+.newslist{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 10px;
+    list-style: none;
+    li{
+      background-color: var(--main-white);
+      transition-duration: 0.3s;
       text-align: center;
       a{
-        color: black;
-        font-weight: bold;
-        font-size: 1.2rem;
-        transition: 0.3s ease-out;
-        border-bottom: 2px solid var(--section-brown);
+        display: block;
         text-decoration: none;
-        padding: 0 30px;
+        padding-bottom: 18px;
+        img{
+          max-width: 100%;
+        }
+        h3{
+          margin-bottom: 0;
+          font-size: 1.4rem;
+        }
       }
     }
-    .news-seemore:hover a{
-      border-bottom: 2px solid black;
+    li:hover{
+      box-shadow: 0 0 5px 5px var(--main-brown);
+      opacity: 0.7;
     }
+  }
+.news-seemore{
+  text-align: center;
+  a{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-out;
+    border-bottom: 2px solid var(--section-brown);
+    text-decoration: none;
+    padding: 0 30px;
+  }
+}
+.news-seemore:hover a{
+  border-bottom: 2px solid black;
+}
+@media (max-width: 767px){
+  .newslist{
+    grid-template-columns: 1fr;
+    li{
+      a{
+        h3{
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
 </style>

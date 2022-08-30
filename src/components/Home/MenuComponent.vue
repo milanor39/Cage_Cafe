@@ -49,13 +49,13 @@ export default {
 </script>
 
 <style lang="scss">
-  .menu-title{
-    text-align: center;
-    color: var(--main-brown);
-    h2{
-      margin: 0;
-    }
+.menu-title{
+  text-align: center;
+  color: var(--main-brown);
+  h2{
+    margin: 0;
   }
+}
 .menu-list{
   ul{
     display: grid;
@@ -110,5 +110,12 @@ export default {
 }
 .menu-seemore:hover a{
   border-bottom: 2px solid var(--main-black);
+}
+@media (max-width: 1200px){
+  .menu-list{
+    ul{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
 </style>

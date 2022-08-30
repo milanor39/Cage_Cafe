@@ -1,41 +1,75 @@
 <template>
   <header>
     <div class="header-content">
-        <div class="logo">
-          <router-link to="/">
-            <img src="./assets/logo.png" alt="logo">
-            <h1>Cage_Cafe</h1>
-          </router-link>
-        </div>
-        <nav>
-          <ul class="nav-link">
-            <li>
-              <router-link to="/about">
-                <h3>最新消息</h3>
-                <span>NEWS</span>
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/about">
-                <h3>關於CageCafe</h3>
-                <span>ABOUT</span>
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/about">
-                <h3>美味餐點</h3>
-                <span>MENU</span>
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/about">
-                <h3>門市資訊</h3>
-                <span>STORE INFORMATION</span>
-              </router-link>
-            </li>
-          </ul>
-        </nav>
+      <a class="burger-menu" href="#" @click.prevent="showMenu = !showMenu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </a>
+      <div class="logo">
+        <router-link to="/">
+          <img src="./assets/logo.png" alt="logo">
+          <h1>Cage_Cafe</h1>
+        </router-link>
       </div>
+      <nav class="pc-menu">
+        <ul class="nav-link">
+          <li>
+            <router-link to="/about">
+              <h3>最新消息</h3>
+              <span>NEWS</span>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/about">
+              <h3>關於我們</h3>
+              <span>ABOUT</span>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/about">
+              <h3>美味餐點</h3>
+              <span>MENU</span>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/about">
+              <h3>門市資訊</h3>
+              <span>STORE</span>
+            </router-link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile-menu" v-if="showMenu">
+      <ul>
+        <li>
+          <router-link to="/about">
+            <h5 class="mobile-title">最新消息<span>NEWS</span></h5>
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/about">
+            <h5 class="mobile-title">關於我們<span>ABOUT</span></h5>
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/about">
+            <h5 class="mobile-title">美味餐點<span>MENU</span></h5>
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/about">
+            <h5 class="mobile-title">門市資訊<span>STORE</span></h5>
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/about">
+            <h5 class="mobile-title">聯絡我們<span>CONTACT</span></h5>
+          </router-link>
+        </li>
+      </ul>
+    </div>
   </header>
   <main>
     <router-view/>
@@ -56,9 +90,6 @@
               <router-link to="/about">關於CageCafe</router-link>
             </li>
             <li>
-              <router-link to="/about">網站地圖</router-link>
-            </li>
-            <li>
               <router-link to="/about">徵才情報</router-link>
             </li>
             <li>
@@ -71,6 +102,16 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      showMenu: false
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 :root{
@@ -98,6 +139,15 @@ header{
   .header-content{
     display: flex;
     justify-content: space-between;
+    .burger-menu{
+      display: none;
+      padding-top: 20px;
+      .burger-line{
+        border: 1px solid var(--main-black);
+        width: 30px;
+        margin-bottom: 10px;
+      }
+    }
     .logo{
       width: 210px;
       white-space: nowrap;
@@ -106,36 +156,62 @@ header{
         display: inline;
       }
     }
-  }
-  nav{
-    display: flex;
-    align-items: flex-end;
-    .nav-link{
+    .pc-menu{
       display: flex;
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-      li{
-        margin-left: 10px;
-        text-align: center;
-        a{
-          display: inline-block;
-          padding: 10px 20px;
-          text-decoration: none;
-          color: var(--main-black);
-          transition: 0.3s ease-out;
-          h3{
-            margin: 0;
+      align-items: center;
+      .nav-link{
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        background-color: white;
+        li{
+          text-align: center;
+          a{
+            display: inline-block;
+            padding: 10px 13px;
+            text-decoration: none;
+            color: var(--main-black);
+            transition: 0.3s ease-out;
+            h3{
+              margin: 0;
+            }
           }
         }
+        li:hover a{
+          background-color: var(--main-brown);
+          color: var(--main-white);
+        }
       }
-      li:hover a{
-        background-color: var(--main-brown);
-        color: var(--main-white);
+    }
+  }
+  .mobile-menu{
+    position: absolute;
+    background-color: var(--main-brown);
+    top: 87px;
+    left:0px;
+    width: 100%;
+    z-index: 2;
+    ul{
+      list-style: none;
+      padding-left: 0;
+      padding: 0 30px 30px 30px;
+      margin: 0;
+      li{
+        border-bottom: 1px solid var(--main-white);
+        a{
+          text-decoration: none;
+          .mobile-title{
+            color: var(--main-white);
+            margin-bottom: 0;
+            font-size: 1.5rem;
+          }
+        }
       }
     }
   }
 }
+/*footer*/
 footer{
   background-color: var(--main-brown);
   padding: 10px;
@@ -153,7 +229,7 @@ footer{
           a{
             color: var(--main-white);
             text-decoration: none;
-            margin-left: 20px;
+            margin:0 20px;
           }
         }
       }
@@ -168,7 +244,7 @@ footer{
         a{
           color: var(--main-white);
           text-decoration: none;
-          margin-right: 20px;
+          margin: 0 20px;
           font-size: 1rem;
           border-bottom: 1px solid var(--main-brown);
         }
@@ -182,6 +258,33 @@ footer{
     margin: 0;
     text-align: center;
     color: var(--main-white);
+  }
+}
+@media (max-width: 767px) {
+  header{
+    .header-content{
+      .burger-menu{
+        display: block;
+      }
+      .logo{
+        margin: 0 auto;
+      }
+      .pc-menu{
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 567px) {
+  footer{
+    .footer-content{
+      .sns{
+        margin: 0 auto;
+      }
+      .footer-list{
+        display: none;
+      }
+    }
   }
 }
 </style>
