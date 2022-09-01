@@ -15,7 +15,7 @@
       <nav class="pc-menu">
         <ul class="nav-link">
           <li>
-            <router-link to="/about">
+            <router-link to="/news">
               <h3>最新消息</h3>
               <span>NEWS</span>
             </router-link>
@@ -44,7 +44,7 @@
     <div class="mobile-menu" v-if="showMenu">
       <ul>
         <li>
-          <router-link to="/about">
+          <router-link to="/news">
             <h5 class="mobile-title">最新消息 -<span> NEWS</span></h5>
           </router-link>
         </li>

@@ -15,7 +15,7 @@
     </li>
   </ul>
   <div class="news-seemore">
-    <router-link to="/about">看更多</router-link>
+    <router-link to="/news">看更多</router-link>
   </div>
 </template>
 
