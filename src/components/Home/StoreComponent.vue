@@ -1,11 +1,13 @@
 <template>
   <div class="shop-title">
     <h2>門市資訊</h2>
-    <p>Store information</p>
+    <p>STORE</p>
   </div>
   <div class="shop-area">
     <div class="shop-content">
-      <router-link to="/about"><h2>尋找CageCafe</h2></router-link>
+      <router-link to="/about">
+        <h2>尋找CageCafe</h2>
+      </router-link>
     </div>
   </div>
 </template>
@@ -13,7 +15,17 @@
 <style lang="scss">
   .shop-title{
     text-align: center;
-    color: black;
+    color: var(--main-black);
+    h2{
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    p{
+      font-family: 'Satisfy', cursive;
+      font-size: 1.5rem;
+      margin: 0 0 5px 0;
+    }
+    border-bottom: 1px solid var(--main-black);
   }
   .shop-area{
     padding: 0 10px;
@@ -25,15 +37,23 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 16px 0;
       a{
         background-color: rgba($color: white, $alpha: 1);
-        color: var(--main-black);
+        color: var(--main-brown);
         text-decoration: none;
         transition-duration: 00.3s;
         padding: 0 20px;
       }
       a:hover{
         background-color: rgba($color: white, $alpha: 0.6);
+      }
+    }
+  }
+  @media (max-width: 767px){
+    .shop-area{
+      .shop-content{
+        height: 200px;
       }
     }
   }

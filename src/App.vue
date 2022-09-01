@@ -28,7 +28,7 @@
           </li>
           <li>
             <router-link to="/about">
-              <h3>美味餐點</h3>
+              <h3>菜單一覽</h3>
               <span>MENU</span>
             </router-link>
           </li>
@@ -45,27 +45,27 @@
       <ul>
         <li>
           <router-link to="/about">
-            <h5 class="mobile-title">最新消息<span>NEWS</span></h5>
+            <h5 class="mobile-title">最新消息 -<span> NEWS</span></h5>
           </router-link>
         </li>
         <li>
           <router-link to="/about">
-            <h5 class="mobile-title">關於我們<span>ABOUT</span></h5>
+            <h5 class="mobile-title">關於CageCafe -<span> ABOUT</span></h5>
           </router-link>
         </li>
         <li>
           <router-link to="/about">
-            <h5 class="mobile-title">美味餐點<span>MENU</span></h5>
+            <h5 class="mobile-title">菜單一覽 -<span> MENU</span></h5>
           </router-link>
         </li>
         <li>
           <router-link to="/about">
-            <h5 class="mobile-title">門市資訊<span>STORE</span></h5>
+            <h5 class="mobile-title">門市資訊 -<span> STORE</span></h5>
           </router-link>
         </li>
         <li>
           <router-link to="/about">
-            <h5 class="mobile-title">聯絡我們<span>CONTACT</span></h5>
+            <h5 class="mobile-title">聯絡我們 -<span> CONTACT</span></h5>
           </router-link>
         </li>
       </ul>
@@ -165,6 +165,9 @@ header{
         padding-left: 0;
         margin: 0;
         background-color: white;
+        span{
+          font-family: 'Satisfy', cursive;
+        }
         li{
           text-align: center;
           a{
@@ -205,6 +208,9 @@ header{
             color: var(--main-white);
             margin-bottom: 0;
             font-size: 1.5rem;
+          }
+          span{
+            font-family: 'Satisfy', cursive;
           }
         }
       }

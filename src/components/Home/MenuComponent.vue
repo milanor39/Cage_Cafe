@@ -1,20 +1,21 @@
 <template>
   <div class="menu-title">
-    <h2>推薦餐點&飲品</h2>
-    <p>Recommened Dishes & Drinks</p>
+    <h2>菜單一覽</h2>
+    <p>MENU</p>
   </div>
   <div class="menu-list">
     <ul>
-        <li v-for="dish in recommenedDishes" :key="dish.name">
+      <li v-for="item in menucard" :key="item.engtitle">
+        <router-link to="/about">
           <div class="list-card">
-            <router-link to="/about">
-              <img :src="dish.img" :alt="dish.name">
-              <span>HOT</span>
-              <h3>{{dish.name}}</h3>
-            </router-link>
+            <img :src="item.img" :alt="item.engtitle">
+            <div class="card-title">
+              <h3>{{item.title}}</h3>
+            </div>
           </div>
-        </li>
-      </ul>
+        </router-link>
+      </li>
+    </ul>
   </div>
   <div class="menu-seemore">
     <router-link to="/about">看更多</router-link>
@@ -25,22 +26,16 @@
 export default {
   data () {
     return {
-      recommenedDishes: [
+      menucard: [
         {
-          name: '特製柳橙塔',
-          img: 'https://drive.google.com/uc?export=download&id=1-br3i2SUYhDgwfgJ55SWcQfTRNbsXPOi'
+          title: '餐點',
+          engtitle: 'Food',
+          img: 'https://www.pakutaso.com/shared/img/thumb/MOK_monburancake_TP_V.jpg'
         },
         {
-          name: '招牌番茄肉醬麵',
-          img: 'https://girlydrop.com/wp-content/uploads/post/p511.jpg'
-        },
-        {
-          name: '招牌卡布奇諾',
-          img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A8165.jpg.webp?d=1420'
-        },
-        {
-          name: '蜂蜜牛奶拿鐵',
-          img: 'https://girlydrop.com/wp-content/uploads/post/p538.jpg'
+          title: '飲品',
+          engtitle: 'Drink',
+          img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ellycollection044.jpg.webp?d=1420'
         }
       ]
     }
@@ -51,46 +46,46 @@ export default {
 <style lang="scss">
 .menu-title{
   text-align: center;
-  color: var(--main-brown);
+  color: var(--main-black);
   h2{
     margin: 0;
+    font-size: 1.8rem;
   }
+  p{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 0 0 5px 0;
+  }
+  border-bottom: 1px solid var(--main-black);
 }
 .menu-list{
+  margin: 0 auto;
   ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 15px;
     padding: 0 10px;
     list-style: none;
-    .list-card{
-      position: relative;
-      overflow: hidden;
+    li{
       transition-duration: 0.3s;
-      display: flex;
-      img{
-        max-width: 100%;
-        vertical-align: middle;
-      }
-      span{
-        position: absolute;
-        top: -8px;
-        left: -38px;
-        color: azure;
-        background-color: rgba($color: #ff1515, $alpha: 0.6);
-        padding:25px 40px 5px 40px;
-        transform: rotate(-45deg);
-        font-size: 1.1em;
-      }
-      h3{
-        color: var(--main-white);
-        position: absolute;
-        top: 140px;
-        left: 10px;
+      .list-card{
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+        img{
+          max-width: 100%;
+        }
+        .card-title{
+          position: absolute;
+          top: 0;
+          left: 30px;
+          color: white;
+          font-size: 2rem;
+        }
       }
     }
-    .list-card:hover{
+    li:hover{
       box-shadow: 0 0 5px 5px var(--main-brown);
       opacity: 0.7;
     }
@@ -115,6 +110,13 @@ export default {
   .menu-list{
     ul{
       grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media (max-width: 767px){
+  .menu-list{
+    ul{
+      grid-template-columns: 1fr;
     }
   }
 }

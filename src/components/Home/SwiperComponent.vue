@@ -46,7 +46,7 @@ import { Autoplay, Pagination } from 'swiper'
 export default {
   data () {
     return {
-      eventImg1: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A8068.jpg.webp?d=1420',
+      eventImg1: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/PKU4161369PAR58481.jpg.webp?d=1420',
       eventImg2: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A7885.jpg.webp?d=1420',
       eventImg3: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/E146_iceteatoraimunojinjya.jpg.webp?d=1420',
       eventImg4: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A8104.jpg.webp?d=1420',

@@ -7,7 +7,7 @@
     <li v-for="news in newslist" :key="news.title">
       <router-link to="/about">
         <div>
-          <img :src="news.img" alt="">
+          <img :src="news.img" :alt="news.title">
         </div>
         <h3>{{news.title}}</h3>
         <small>{{news.date}}</small>
@@ -48,9 +48,17 @@ export default {
 <style lang="scss">
 .news-title{
   text-align: center;
+  color: var(--main-black);
   h2{
     margin: 0;
+    font-size: 1.8rem;
   }
+  p{
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+    margin: 0 0 5px 0;
+  }
+  border-bottom: 1px solid var(--main-brown);
 }
 .newslist{
     display:grid;
@@ -66,6 +74,7 @@ export default {
         display: block;
         text-decoration: none;
         padding-bottom: 18px;
+        color: var(--main-black);
         img{
           max-width: 100%;
         }
