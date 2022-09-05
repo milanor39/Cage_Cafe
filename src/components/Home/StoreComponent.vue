@@ -5,7 +5,7 @@
   </div>
   <div class="shop-area">
     <div class="shop-content">
-      <router-link to="/about">
+      <router-link to="/store">
         <h2>尋找CageCafe</h2>
       </router-link>
     </div>

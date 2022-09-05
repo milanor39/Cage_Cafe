@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="header-content">
-      <a class="burger-menu" href="#" @click.prevent="showMenu = !showMenu">
+      <a class="burger-menu" href="#" @click.prevent="toggleMenu">
         <div class="burger-line"></div>
         <div class="burger-line"></div>
         <div class="burger-line"></div>
@@ -27,13 +27,13 @@
             </router-link>
           </li>
           <li>
-            <router-link to="/about">
+            <router-link to="/menu">
               <h3>菜單一覽</h3>
               <span>MENU</span>
             </router-link>
           </li>
           <li>
-            <router-link to="/about">
+            <router-link to="/store">
               <h3>門市資訊</h3>
               <span>STORE</span>
             </router-link>
@@ -41,7 +41,7 @@
         </ul>
       </nav>
     </div>
-    <div class="mobile-menu" v-if="showMenu">
+    <div class="mobile-menu" v-show="showMenu">
       <ul>
         <li>
           <router-link to="/news">
@@ -54,12 +54,12 @@
           </router-link>
         </li>
         <li>
-          <router-link to="/about">
+          <router-link to="/menu">
             <h5 class="mobile-title">菜單一覽 -<span> MENU</span></h5>
           </router-link>
         </li>
         <li>
-          <router-link to="/about">
+          <router-link to="/store">
             <h5 class="mobile-title">門市資訊 -<span> STORE</span></h5>
           </router-link>
         </li>
@@ -90,10 +90,10 @@
               <router-link to="/about">關於CageCafe</router-link>
             </li>
             <li>
-              <router-link to="/about">徵才情報</router-link>
+              <a href="https://recruit.komeda-coffee.jp/" target="_blank">徵才情報</a>
             </li>
             <li>
-              <router-link to="/about">聯絡我們</router-link>
+              <router-link to="/contact">聯絡我們</router-link>
             </li>
           </ul>
         </div>
@@ -108,6 +108,11 @@ export default {
   data () {
     return {
       showMenu: false
+    }
+  },
+  methods: {
+    toggleMenu () {
+      this.showMenu = !this.showMenu
     }
   }
 }

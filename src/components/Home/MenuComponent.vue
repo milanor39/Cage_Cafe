@@ -18,7 +18,7 @@
     </ul>
   </div>
   <div class="menu-seemore">
-    <router-link to="/about">看更多</router-link>
+    <router-link to="/menu">看更多</router-link>
   </div>
 </template>
 
