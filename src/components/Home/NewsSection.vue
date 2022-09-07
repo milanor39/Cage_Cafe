@@ -1,5 +1,5 @@
 <template>
-  <div class="news-title">
+  <div class="section-title">
     <h2>最新消息</h2>
     <p>NEWS</p>
   </div>
@@ -46,20 +46,6 @@ export default {
 </script>
 
 <style lang="scss">
-.news-title{
-  text-align: center;
-  color: var(--main-black);
-  h2{
-    margin: 0;
-    font-size: 1.8rem;
-  }
-  p{
-    font-family: 'Satisfy', cursive;
-    font-size: 1.5rem;
-    margin: 0 0 5px 0;
-  }
-  border-bottom: 1px solid var(--main-brown);
-}
 .newslist{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;

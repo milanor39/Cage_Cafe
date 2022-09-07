@@ -1,5 +1,5 @@
 <template>
-  <div class="shop-title">
+  <div class="section-title">
     <h2>門市資訊</h2>
     <p>STORE</p>
   </div>
@@ -13,20 +13,6 @@
 </template>
 
 <style lang="scss">
-  .shop-title{
-    text-align: center;
-    color: var(--main-black);
-    h2{
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    p{
-      font-family: 'Satisfy', cursive;
-      font-size: 1.5rem;
-      margin: 0 0 5px 0;
-    }
-    border-bottom: 1px solid var(--main-black);
-  }
   .shop-area{
     padding: 0 10px;
     .shop-content{
