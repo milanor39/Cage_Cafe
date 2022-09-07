@@ -36,16 +36,16 @@ export default {
           img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ellycollection074.jpg.webp?d=1420'
         },
         {
+          name: '珍珠奶茶',
+          engName: 'Bubble Tea',
+          price: '$100',
+          img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/tapiocaGFVL5166.jpg.webp?d=1420'
+        },
+        {
           name: '檸檬蘇打',
           engName: 'Lemon Squash',
           price: '$110',
           img: 'https://girlydrop.com/wp-content/uploads/post/p880.jpg'
-        },
-        {
-          name: '珍珠奶茶',
-          engName: 'Bubble tea',
-          price: '$100',
-          img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/tapiocaGFVL5166.jpg.webp?d=1420'
         }
       ]
     }
