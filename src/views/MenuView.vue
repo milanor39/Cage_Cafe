@@ -3,9 +3,7 @@
     <nav>
         <div class="container">
             <ul>
-                <li>
-                    <a href="">咖啡</a>
-                </li>
+                <li>咖啡</li>
             </ul>
         </div>
     </nav>

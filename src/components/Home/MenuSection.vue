@@ -1,5 +1,5 @@
 <template>
-  <div class="menu-title">
+  <div class="section-title">
     <h2>菜單一覽</h2>
     <p>MENU</p>
   </div>
@@ -44,20 +44,6 @@ export default {
 </script>
 
 <style lang="scss">
-.menu-title{
-  text-align: center;
-  color: var(--main-black);
-  h2{
-    margin: 0;
-    font-size: 1.8rem;
-  }
-  p{
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    margin: 0 0 5px 0;
-  }
-  border-bottom: 1px solid var(--main-black);
-}
 .menu-list{
   margin: 0 auto;
   ul{

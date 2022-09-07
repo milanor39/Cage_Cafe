@@ -222,6 +222,21 @@ header{
     }
   }
 }
+/*main */
+.section-title{
+  text-align: center;
+  color: var(--main-black);
+  h2{
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  p{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 0 0 5px 0;
+  }
+  border-bottom: 1px solid var(--main-black);
+}
 /*footer*/
 footer{
   background-color: var(--main-brown);

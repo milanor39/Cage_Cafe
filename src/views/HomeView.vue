@@ -1,40 +1,40 @@
 <template>
   <section>
       <div class="container">
-        <SwiperComponent></SwiperComponent>
+        <SwiperSectionVue></SwiperSectionVue>
       </div>
   </section>
   <section class="section-brown">
     <div class="container">
-      <NewsComponent></NewsComponent>
+      <NewsSectionVue></NewsSectionVue>
     </div>
   </section>
   <section>
     <div class="container">
-      <MenuComponent></MenuComponent>
+      <MenuSectiontVue></MenuSectiontVue>
     </div>
   </section>
   <section class="section-brown">
     <div class="container">
-      <StoreComponent></StoreComponent>
+      <StoreSectionVue></StoreSectionVue>
     </div>
   </section>
 </template>
 
 <script>
 // @ is an alias to /src
-import SwiperComponent from '@/components/Home/SwiperComponent.vue'
-import NewsComponent from '@/components/Home/NewsComponent.vue'
-import MenuComponent from '@/components/Home/MenuComponent.vue'
-import StoreComponent from '@/components/Home/StoreComponent.vue'
+import SwiperSectionVue from '@/components/Home/SwiperSection.vue'
+import NewsSectionVue from '@/components/Home/NewsSection.vue'
+import MenuSectiontVue from '@/components/Home/MenuSection.vue'
+import StoreSectionVue from '@/components/Home/StoreSection.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    SwiperComponent,
-    NewsComponent,
-    MenuComponent,
-    StoreComponent
+    SwiperSectionVue,
+    NewsSectionVue,
+    MenuSectiontVue,
+    StoreSectionVue
   }
 }
 </script>
