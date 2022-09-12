@@ -10,7 +10,7 @@
                     <div class="tea-card">
                         <img :src="tea.img" :alt="tea.name">
                         <p>{{tea.name}}</p>
-                        <span>{{tea.price}}</span>
+                        <span>${{tea.price}}</span>
                     </div>
                 </li>
             </ul>
@@ -26,25 +26,25 @@ export default {
         {
           name: '紅茶',
           engName: 'Black Tea',
-          price: '$80',
+          price: 80,
           img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/21ellyri529B.jpg.webp?d=1420'
         },
         {
           name: '玫瑰花茶',
           engName: 'Rose Tea',
-          price: '$130',
+          price: 130,
           img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ellycollection074.jpg.webp?d=1420'
         },
         {
           name: '珍珠奶茶',
           engName: 'Bubble Tea',
-          price: '$100',
+          price: 100,
           img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/tapiocaGFVL5166.jpg.webp?d=1420'
         },
         {
           name: '檸檬蘇打',
           engName: 'Lemon Squash',
-          price: '$110',
+          price: 110,
           img: 'https://girlydrop.com/wp-content/uploads/post/p880.jpg'
         }
       ]

@@ -10,7 +10,7 @@
                     <div class="coffee-card">
                         <img :src="coffee.img" :alt="coffee.name">
                         <p>{{coffee.name}}</p>
-                        <span>{{coffee.price}}</span>
+                        <span>${{coffee.price}}</span>
                     </div>
                 </li>
             </ul>
@@ -26,31 +26,31 @@ export default {
         {
           name: '黑咖啡',
           engName: 'Black Coffee',
-          price: '$90',
+          price: 90,
           img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A8143.jpg.webp?d=1420'
         },
         {
           name: '冰咖啡',
           engName: 'Ice Coffee',
-          price: '90',
+          price: 90,
           img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/PP_coffetime.jpg.webp?d=1420'
         },
         {
           name: '卡布奇諾',
           engName: 'Cappuccino',
-          price: '$100',
+          price: 100,
           img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A8165.jpg.webp?d=1420'
         },
         {
           name: '拿鐵',
           engName: 'Latte',
-          price: '$100',
+          price: 100,
           img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasutaFJ01.jpg.webp?d=1420'
         },
         {
           name: '義式濃縮',
           engName: 'Espresso',
-          price: '$100',
+          price: 100,
           img: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/DSCF9095-Edit.jpg.webp?d=1420'
         }
       ]
