@@ -1,10 +1,11 @@
 <template>
-  <h2>NEWS</h2>
-  <ul>
-    <li v-for="i in 3" :key="i">
-      <router-link :to="`/news/${i}`">/news/{{ i }}</router-link>
-    </li>
-  </ul>
+  <div class="container">
+    <div class="title-background">
+      <p>News</p>
+    </div>
+  </div>
+  <section></section>
+  <section></section>
 </template>
 
 <script>

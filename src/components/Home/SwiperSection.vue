@@ -47,7 +47,7 @@ export default {
   data () {
     return {
       eventImg1: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/PKU4161369PAR58481.jpg.webp?d=1420',
-      eventImg2: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A7885.jpg.webp?d=1420',
+      eventImg2: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ogasuta458A7895.jpg.webp?d=1420',
       eventImg3: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/kazukihiro0803DSCF5656.jpg.webp?d=1420',
       eventImg4: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/KZ39DSCF3080.jpg.webp?d=1420',
       eventImg5: 'https://pakutaso.cdn.rabify.me/shared/img/thumb/ellycollection051.jpg.webp?d=1420'

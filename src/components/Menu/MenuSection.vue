@@ -2,8 +2,8 @@
     <li>
         <div class="lightmeal-card">
             <img :src="img" :alt="name">
-                <p>{{name}}</p>
-            <span>${{price}}</span>
+            <p>{{name}}</p>
+            <p>${{price}}</p>
         </div>
     </li>
 </template>

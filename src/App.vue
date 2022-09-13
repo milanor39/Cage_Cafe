@@ -71,7 +71,7 @@
       </ul>
     </div>
   </header>
-  <main>
+  <main id="content">
     <router-view/>
   </main>
   <footer>
