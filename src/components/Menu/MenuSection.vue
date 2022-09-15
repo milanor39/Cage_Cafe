@@ -10,8 +10,19 @@
 
 <script>
 export default {
-  props: [
-    'name', 'price', 'img'
-  ]
+  props: {
+    name: {
+      type: String,
+      required: true
+    },
+    price: {
+      type: Number,
+      required: true
+    },
+    img: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
