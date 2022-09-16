@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="title-background">
-      <p>News</p>
+      <p>NEWS</p>
     </div>
   </div>
   <section></section>

@@ -131,7 +131,36 @@ body{
 .container{
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
+section {
+  padding: 20px 0 20px 0;
+}
+
+.title-background {
+  height: 150px;
+  background-image: url(https://pakutaso.cdn.rabify.me/shared/img/thumb/table201261765.jpg.webp?d=1420);
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  p{
+    font-family: "Playfair Display", serif;
+    align-items: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.5rem;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
 /*header*/
 header{
   border-bottom: 10px solid var(--main-brown);

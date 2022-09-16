@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="title-background">
-      <p>About us</p>
+      <p>ABOUT</p>
     </div>
   </div>
   <section class="section-brown">
@@ -59,24 +59,6 @@ section {
   padding: 20px 0 20px 0;
 }
 
-.title-background {
-  height: 200px;
-  background-image: url(https://pakutaso.cdn.rabify.me/shared/img/thumb/cafe201261763.jpg.webp?d=1420);
-  background-size: cover;
-  background-position: center;
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-
-  p {
-    font-family: "Playfair Display", serif;
-    align-items: center;
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 0.5rem;
-  }
-}
 .article{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -94,6 +76,7 @@ section {
   article{
     p{
       font-size: 1.1rem;
+      line-height: 2rem;
     }
   }
 }

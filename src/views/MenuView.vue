@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="title-background">
-      <p>Menu</p>
+      <p>MENU</p>
     </div>
   </div>
   <section id="coffee" class="section-brown">
@@ -207,38 +207,6 @@ export default {
 </script>
 
 <style lang="scss">
-.container {
-  max-width: 1200px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-section {
-  padding: 20px 0 20px 0;
-}
-
-.title-background {
-  height: 200px;
-  background-image: url(https://pakutaso.cdn.rabify.me/shared/img/thumb/cafe201261763.jpg.webp?d=1420);
-  background-size: cover;
-  background-position: center;
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-  p{
-    font-family: "Playfair Display", serif;
-    align-items: center;
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 0.5rem;
-  }
-}
-
-h2 {
-  text-align: center;
-}
-
 .menu-content {
   ul {
     display: grid;
